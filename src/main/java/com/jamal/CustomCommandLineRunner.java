@@ -21,9 +21,9 @@ public class CustomCommandLineRunner implements CommandLineRunner {
 	@Override
 	public void run(final String... arg0) throws Exception {
 		this.logger.info("COMMAND LINE RUNNER");
-		this.logger.info(this.todoRepository.save(new Todo("first todo")).toString());
-		this.logger.info(this.todoRepository.save(new Todo("second todo")).toString());
-		this.logger.info(this.todoRepository.save(new Todo("third todo")).toString());
+		this.logger.info(this.todoRepository.save(new Todo("Agile Stand Up")).toString());
+		this.logger.info(this.todoRepository.save(new Todo("Meeting with UI Team")).toString());
+		this.logger.info(this.todoRepository.save(new Todo("Production Build")).toString());
 	}
 
 }
